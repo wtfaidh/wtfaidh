@@ -41,9 +41,7 @@ use _.dta
  rename _merge d_merge
  
  merge 1:1 interview__id using "4.dta"
- order Q4_11 - Q4_27, after (order_4)
- drop Q4_1__0 - Q4_1__9
- rename _merge c_merge
+
  
 save "$rawdata/rot_raw.dta", replace 
  
